@@ -23,26 +23,26 @@
   <body>
     <header class="header">
       <div class="container">
-        <a href="#" class="header-logo"><span class="accent">Web</span>Studio</a>
-        <nav class="nav">
-          <ul class="list-header list">
-            <li><a href="#" class="header-link current link">Студія</a></li>
-            <li><a href="./portfolio.html" class="header-link link">Портфоліо</a></li>
-            <li><a href="#" class="header-link link">Контакти</a></li>
+        <a href="#" class="logo header__logo"><span class="accent">Web</span>Studio</a>
+        <nav class="navigation">
+          <ul class="navigation__list list">
+            <li><a href="#" class="navigation__link current link">Студія</a></li>
+            <li><a href="./portfolio.html" class="navigation__link link">Портфоліо</a></li>
+            <li><a href="#" class="navigation__link link">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="contacts-list list">
+        <ul class="contacts list">
           <li>
-            <a href="mailto:info@devstudio.com" class="header-contact link">
-              <svg width="16" height="12" class="contact-icons">
+            <a href="mailto:info@devstudio.com" class="contacts__link link">
+              <svg width="16" height="12" class="contacts__icons">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
           <li>
-            <a href="tel:+380961111111" class="header-contact link">
-              <svg width="16" height="12" class="contact-icons">
+            <a href="tel:+380961111111" class="contacts__link link">
+              <svg width="16" height="12" class="contacts__icons">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38(096)-111-11-11
@@ -52,71 +52,71 @@
       </div>
     </header>
     <main>
-      <section class="hero">
-        <div class="container hero-cont">
-          <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-btn" data-modal-open>Замовити послугу</button>
+      <section class="hero main__hero">
+        <div class="container">
+          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="hero__btn" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <section class="section">
         <h2 class="visually-hidden title">Наші особливості</h2>
-        <div class="container section-feature">
-          <ul class="section-list list">
-            <li class="section-items">
-              <div class="icons-elements">
-                <svg width="70" height="70" class="contet-icons">
+        <div class="container feature">
+          <ul class="feature__list list">
+            <li class="feature__items">
+              <div class="feature__elements">
+                <svg width="70" height="70" class="feature__icons">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="main-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="section-elem">
+              <h3 class="feature__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="feature__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
-            <li class="section-items">
-              <div class="icons-elements">
-                <svg width="70" height="70" class="contet-icons">
+            <li class="feature__items">
+              <div class="feature__elements">
+                <svg width="70" height="70" class="feature__icons">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="main-title">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="section-elem">
+              <h3 class="feature__title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="feature__text">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
-            <li class="section-items">
-              <div class="icons-elements">
-                <svg width="70" height="70" class="contet-icons">
+            <li class="feature__items">
+              <div class="feature__elements">
+                <svg width="70" height="70" class="feature__icons">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="main-title">ПЛАНУВАННЯ</h3>
-              <p class="section-elem">
+              <h3 class="feature__title">ПЛАНУВАННЯ</h3>
+              <p class="feature__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="section-items">
-              <div class="icons-elements">
-                <svg width="70" height="70" class="contet-icons">
+            <li class="feature__items">
+              <div class="feature__elements">
+                <svg width="70" height="70" class="feature__icons">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="main-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="section-elem">
+              <h3 class="feature__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="feature__text">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
             </li>
           </ul>
         </div>
       </section>
-      <section class="section-box nopadding">
+      <section class="box nopadding">
         <div class="container">
-          <h2 class="title-box">Чим ми займаємося</h2>
-          <ul class="list-box list">
-            <li class="box-items">
+          <h2 class="box__title">Чим ми займаємося</h2>
+          <ul class="example list">
+            <li class="example__items">
               <img src="./images/box_1.jpg" alt="написання коду" width="370" />
-              <div class="box-example">
-                <p class="post-box-title">ДЕСКТОПНІ ДОДАТКИ</p>
+              <div class="example__label">
+                <p class="example__post-title">ДЕСКТОПНІ ДОДАТКИ</p>
               </div>
             </li>
             <li class="box-items">

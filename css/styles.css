@@ -64,7 +64,7 @@ img {
 .list {
   list-style: none;
 }
-.header-logo {
+.logo {
   font-family: 'Raleway', sans-serif;
 }
 .visually-hidden {
@@ -93,7 +93,10 @@ header .container {
   display: flex;
   align-items: center;
 }
-.header-logo {
+.header {
+  background-color: var(--main-white-color);
+}
+.logo {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -101,28 +104,30 @@ header .container {
   text-decoration: none;
   color: var(--main-logo-color);
   padding: 24px 0 25px 0;
+}
+.header__logo {
   margin-right: 93px;
 }
 .accent {
   color: var(--accent-color);
 }
-.list-header {
+.navigation__list {
   display: flex;
 }
-.list-header > li:not(:last-child) {
+.navigation__list > li:not(:last-child) {
   margin-right: 50px;
 }
 
-.contacts-list {
+.contacts {
   display: flex;
   margin-left: auto;
   font-weight: 500;
 }
-.contacts-list > li:not(:last-child) {
+.contacts > li:not(:last-child) {
   margin-right: 30px;
 }
 
-.header-link {
+.navigation__link {
   position: relative;
   font-weight: 500;
   font-size: 14px;
@@ -133,15 +138,15 @@ header .container {
   transition: color 250ms var(--timing-function);
 }
 
-.header-link:hover,
-.header-link:focus {
+.navigation__link:hover,
+.navigation__link:focus {
   color: var(--accent-color);
 }
-.header-link.current {
+.navigation__link.current {
   color: var(--accent-color);
 }
 
-.header-link.current::after {
+.navigation__link.current::after {
   content: '';
   position: absolute;
   height: 4px;
@@ -151,11 +156,8 @@ header .container {
   background-color: var(--accent-color);
   border-radius: 2px;
 }
-.header {
-  background-color: var(--main-white-color);
-}
 
-.header-contact {
+.contacts__link {
   display: flex;
   width: 100%;
   height: 100%;
@@ -172,7 +174,7 @@ header .container {
 .header-contact:focus {
   color: var(--accent-color);
 }
-.contact-icons {
+.contacts__icons {
   fill: currentColor;
   margin-right: 10px;
 }
@@ -189,23 +191,26 @@ header .container {
   background-size: cover;
   max-width: 1600px;
   background-position: center;
-  margin: auto;
   border: 1px solid #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.title {
+.main__hero {
+  margin: auto;
+}
+
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-white-color);
-  margin: 0 auto;
+  margin: auto;
   max-width: 700px;
 }
 
-.hero-btn {
+.hero__btn {
   margin-top: 35px;
   padding: 10px 32px;
   font-family: inherit;
@@ -221,24 +226,24 @@ header .container {
   transition: background-color 250ms var(--timing-function);
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+.hero__btn:hover,
+.hero__btn:focus {
   background-color: var(--hero-bg-color);
 }
 
 /*------------feature---------*/
-.section-feature {
+.feature {
   background-color: var(--main-white-color);
 }
-.feature-icons {
+.feature__icons {
   display: flex;
   margin-bottom: 30px;
 }
-.feature-icons > li:not(:last-child) {
+.feature__icons > li:not(:last-child) {
   margin-right: 30px;
 }
 
-.icons-elements {
+.feature__elements {
   min-width: 270px;
   min-height: 120px;
   display: flex;
@@ -249,15 +254,15 @@ header .container {
   margin-bottom: 30px;
 }
 
-.section-list {
+.feature__list {
   display: flex;
 }
 
-.section-list > li:not(:last-child) {
+.feature__list > li:not(:last-child) {
   margin-right: 30px;
 }
 
-.main-title {
+.feature__title {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
@@ -265,7 +270,7 @@ header .container {
   text-transform: uppercase;
   color: var(--main-h-color);
 }
-.section-elem {
+.feature__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -276,7 +281,7 @@ header .container {
   padding-bottom: 94px;
 }
 
-.list-box {
+.example {
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
@@ -286,7 +291,7 @@ header .container {
   margin-right: 30px;
 }
 
-.title-box,
+.box__title,
 .title-team,
 .title-company {
   font-size: 36px;
