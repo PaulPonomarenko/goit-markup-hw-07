@@ -175,8 +175,8 @@ header .container {
   align-items: center;
   transition: color 250ms var(--timing-function);
 }
-.header-contact:hover,
-.header-contact:focus {
+.contacts__link:hover,
+.contacts__link:focus {
   color: var(--accent-color);
 }
 .contacts__icons {
@@ -598,16 +598,19 @@ header .container {
   background-color: var(--main-white-color);
 }
 
-.buttons-list {
+.buttons {
   display: flex;
   justify-content: center;
   list-style: none;
+}
+
+.section__buttons {
   margin-bottom: 50px;
 }
-.buttons-list > li:not(:last-child) {
+.buttons > li:not(:last-child) {
   margin-right: 8px;
 }
-.button-menu {
+.buttons__menu {
   border: none;
   border-radius: 4px;
   padding: 6px 22px;
@@ -622,15 +625,15 @@ header .container {
   transition: background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function),
     color 250ms var(--timing-function);
 }
-.button-menu:hover,
-.button-menu:focus {
+.buttons__menu:hover,
+.buttons__menu:focus {
   color: var(--main-white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.button-menu.current {
+.buttons__menu.current {
   color: var(--main-white-color);
   background-color: var(--accent-color);
 }
@@ -880,7 +883,7 @@ header .container {
   margin-bottom: 30px;
 }
 
-.main-form_btn {
+.main-form__btn {
   display: block;
   margin: 0 auto;
   padding: 10px 52px;
@@ -897,8 +900,8 @@ header .container {
   letter-spacing: 0.06em;
 }
 
-.main-form_btn:hover,
-.main-form_btn:focus {
+.main-form__btn:hover,
+.main-form__btn:focus {
   background-color: var(--hero-bg-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
