@@ -4,9 +4,9 @@
 .feature__icons {
   display: flex;
   margin-bottom: 30px;
-}
-.feature__icons > li:not(:last-child) {
-  margin-right: 30px;
+  & > li:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .feature__elements {
@@ -22,10 +22,9 @@
 
 .feature__list {
   display: flex;
-}
-
-.feature__list > li:not(:last-child) {
-  margin-right: 30px;
+  & > li:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .feature__title {

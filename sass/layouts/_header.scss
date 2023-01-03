@@ -1,14 +1,12 @@
 header {
   border: 1px solid #ececec;
+  background-color: var(--main-white-color);
+  & .container {
+    display: flex;
+    align-items: center;
+  }
 }
 
-header .container {
-  display: flex;
-  align-items: center;
-}
-.header {
-  background-color: var(--main-white-color);
-}
 .logo {
   font-weight: 700;
   font-size: 26px;
@@ -31,18 +29,18 @@ header .container {
 }
 .navigation__list {
   display: flex;
-}
-.navigation__list > li:not(:last-child) {
-  margin-right: 50px;
+  & > li:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .contacts {
   display: flex;
   margin-left: auto;
   font-weight: 500;
-}
-.contacts > li:not(:last-child) {
-  margin-right: 30px;
+  & > li:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .navigation__link {
@@ -54,25 +52,23 @@ header .container {
   color: var(--second-link-color);
   padding-bottom: 32px;
   transition: color 250ms var(--timing-function);
-}
-
-.navigation__link:hover,
-.navigation__link:focus {
-  color: var(--accent-color);
-}
-.navigation__link.current {
-  color: var(--accent-color);
-}
-
-.navigation__link.current::after {
-  content: '';
-  position: absolute;
-  height: 4px;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  background-color: var(--accent-color);
-  border-radius: 2px;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  &.current {
+    color: var(--accent-color);
+  }
+  &.current::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+  }
 }
 
 .contacts__link {
@@ -82,16 +78,16 @@ header .container {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
   color: var(--main-link-color);
   justify-content: center;
   align-items: center;
   transition: color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
-.contacts__link:hover,
-.contacts__link:focus {
-  color: var(--accent-color);
-}
+
 .contacts__icons {
   fill: currentColor;
   margin-right: 10px;

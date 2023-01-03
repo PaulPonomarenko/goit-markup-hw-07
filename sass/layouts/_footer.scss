@@ -33,11 +33,11 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms var(--timing-function);
-}
-.contact-footer__link:hover,
-.contact-footer__link:focus {
-  color: var(--accent-color);
-}
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+
 
 .footer-icon__title {
   font-size: 14px;
