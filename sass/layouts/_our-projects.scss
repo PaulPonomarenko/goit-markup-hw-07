@@ -1,0 +1,62 @@
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.about__title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-h-color);
+  margin-bottom: 4px;
+}
+.about__post {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--main-link-color);
+}
+.about {
+  padding: 20px 24px;
+}
+.section-cards__text {
+  position: absolute;
+  top: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--main-white-color);
+  height: 100%;
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 63px;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform 250ms var(--timing-function);
+}
+.section-cards {
+  overflow: hidden;
+}
+
+.projects__section-cards {
+  position: relative;
+}
+.projects__items {
+  flex-basis: calc((100% - 60px) / 3);
+  border: 1px solid var(--main-border-color);
+  transition: box-shadow 250ms var(--timing-function);
+}
+
+.projects__items :nth-child(3n) {
+  margin-right: 0;
+}
+.projects__items:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.projects__items:hover .section-cards__text {
+  transform: translateY(0%);
+}
