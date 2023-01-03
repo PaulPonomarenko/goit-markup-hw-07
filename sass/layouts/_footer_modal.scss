@@ -4,29 +4,21 @@
 }
 
 .footer-form__label {
+  @include font(700, 14px, 1.14, 0.03em);
   display: flex;
 
   width: 100%;
   margin-bottom: 20px;
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
   color: var(--main-white-color);
 }
+
 .footer-form__input {
+  @include font(400, 16px, 1.25, 0.03em);
   width: 358px;
   height: 50px;
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
-
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -36,6 +28,7 @@
 }
 
 .footer-form__btn {
+  @include font(700, 16px, 1.87, 0.06em);
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -49,11 +42,6 @@
   padding-bottom: 10px;
   padding-left: 0;
   padding-right: 0;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
   color: var(--main-white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

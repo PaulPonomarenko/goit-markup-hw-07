@@ -1,8 +1,7 @@
 .backdrop {
   position: fixed;
   top: 0;
-  width: 100%;
-  height: 100%;
+  @extend %width-height;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms linear, visibility 250ms linear;
   &.is-hidden .modal {
@@ -25,16 +24,13 @@
 }
 
 .modal__close {
+  @extend %flex-items;
   position: absolute;
   right: 8px;
   top: 8px;
   height: 30px;
   width: 30px;
-
-  display: flex;
   justify-content: center;
-  align-items: center;
-
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: var(--main-white-color);
@@ -58,12 +54,9 @@
   pointer-events: none;
 }
 .modal__title {
+  @include font(700, 20px, 1.15, 0.03em);
   margin-top: 40px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--second-link-color);
 }
 
@@ -71,17 +64,13 @@
   margin: 12px 40px auto;
 }
 .modal-group__lable {
+  @include font(400, 12px, 1.16, 0.01em);
   display: flex;
   margin-bottom: 4px;
-
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-
   color: var(--main-link-color);
 }
 .modal-container__input {
+  @include font(400, 12px, 1.16, 0.01em);
   width: 100%;
   height: 40px;
   padding-left: 42px;
@@ -89,10 +78,6 @@
   border-radius: 4px;
   outline: none;
   transition: border 250ms var(--timing-function);
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
   cursor: pointer;
   &:hover,
   &:focus {
@@ -104,6 +89,7 @@
   }
 }
 .modal-group__modal-comment {
+  @include font(400, 12px, 1.16, 0.01em);
   width: 448px;
   height: 120px;
   padding: 12px 16px;
@@ -111,15 +97,8 @@
   border-radius: 4px;
   outline: none;
   transition: border 250ms var(--timing-function);
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
   resize: none;
   &::placeholder {
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
   }
   &:hover,
@@ -148,13 +127,9 @@
 }
 
 .modal-group__modal-politic-label {
-  display: flex;
-  align-items: center;
+  @extend %flex-items;
+  @include font(400, 14px, 1.71, 0.03em);
   justify-content: center;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--main-p-color);
   &::before {
     content: '';
@@ -185,6 +160,7 @@
 }
 
 .main-form__btn {
+  @include font(700, 16px, 1.87, 0.06em);
   display: block;
   margin: 0 auto;
   padding: 10px 52px;
@@ -194,11 +170,6 @@
   background-color: var(--accent-color);
   color: var(--main-white-color);
   transition: background-color 250ms var(--timing-function);
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
   &:hover,
   &:focus {
     background-color: var(--hero-bg-color);

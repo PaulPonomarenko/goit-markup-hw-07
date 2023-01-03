@@ -12,21 +12,15 @@
   margin-top: 50px;
 }
 .our-team__name {
+  @include font(500, 16px, 1.18, 0.03em);
   margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--main-h-color);
 }
 
 .our-team__text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.18;
+  @include font(400, 16px, 1.18, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--main-p-color);
 }
 
@@ -42,19 +36,16 @@
 }
 
 .social {
-  display: flex;
+  @extend %flex-items;
   justify-content: center;
-  align-items: center;
   margin-top: 16px;
 }
 .social__link {
-  display: flex;
-  width: 100%;
-  height: 100%;
+  @extend %flex-items;
+  @extend %width-height;
   border-radius: 50%;
   background-color: var(--main-white-color);
   justify-content: center;
-  align-items: center;
   transition: background-color 250ms var(--timing-function);
   &:hover,
   &:focus {

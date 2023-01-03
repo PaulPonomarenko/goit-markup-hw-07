@@ -17,9 +17,7 @@
   padding-top: 20px;
 }
 .address__footer {
-  font-size: 14px;
-  line-height: 1.5;
-  letter-spacing: 0.03em;
+  @include font(null, 14px, 1.5, 0.03em);
   color: var(--main-white-color);
   padding-bottom: 9px;
 }
@@ -28,21 +26,17 @@
 }
 
 .contact-footer__link {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(null, 14px, 1.71, 0.03em);
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms var(--timing-function);
-    &:hover,
-    &:focus {
-      color: var(--accent-color);
-    }
-
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
 
 .footer-icon__title {
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(null, 14px, 1.14, 0.03em);
   color: var(--main-white-color);
 }
 
