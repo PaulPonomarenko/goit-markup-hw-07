@@ -357,6 +357,7 @@ header .container {
 }
 
 .our-team__text {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -638,20 +639,20 @@ header .container {
   background-color: var(--accent-color);
 }
 
-.section-list-menu {
+.projects {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.section-title {
+.about__title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-h-color);
   margin-bottom: 4px;
 }
-.section-post {
+.about__post {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
@@ -660,7 +661,7 @@ header .container {
 .about {
   padding: 20px 24px;
 }
-.section-cards-description {
+.section-cards__text {
   position: absolute;
   top: 0;
   font-weight: 400;
@@ -678,23 +679,26 @@ header .container {
   transition: transform 250ms var(--timing-function);
 }
 .section-cards {
-  position: relative;
   overflow: hidden;
 }
-.section-items-menu {
+
+.projects__section-cards {
+  position: relative;
+}
+.projects__items {
   flex-basis: calc((100% - 60px) / 3);
   border: 1px solid var(--main-border-color);
   transition: box-shadow 250ms var(--timing-function);
 }
 
-.section-items-menu :nth-child(3n) {
+.projects__items :nth-child(3n) {
   margin-right: 0;
 }
-.section-items-menu:hover {
+.projects__items:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.section-items-menu:hover .section-cards-description {
+.projects__items:hover .section-cards__text {
   transform: translateY(0%);
 }
 
